@@ -6,8 +6,10 @@ function div(a, b) {
 if (b === 0) throw new Error('DivideByZeroException');
 return a / b;
 }
+function sqrt(a) { return Math.sqrt(a) }
 function mod(a, b) {
 if (b === 0) throw new Error('DivideByZeroException');
 return a % b;
 }
-module.exports = { add, sub, mul, div, mod, number};
+
+module.exports = { add, sub, mul, div, mod, number, sqrt};
